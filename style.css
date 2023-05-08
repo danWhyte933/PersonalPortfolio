@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+/* image https://unsplash.com/photos/6QnEf_b47eA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/greg-rosenke-6QnEf_b47eA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

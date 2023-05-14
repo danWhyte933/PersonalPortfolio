@@ -36,12 +36,57 @@
                 <img src="/images/2020-06-30-132558077-Isio-to-occupy-new-office-space-in-Leeds-city-centre.jpg" alt="user">
             </div>
             <div class="about-col-2">
-                <h1>About me</h1>
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ullam dicta recusandae veniam! Enim debitis voluptates aperiam doloremque eum dolorem, neque, recusandae facere vitae eveniet qui? Inventore doloribus nihil consectetur.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/app interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Buildings Android/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 to current</span><br>Job at current place</li>
+                        <li><span>2019 to 2021</span><br>The job I have before that</li>
+                        <li><span>2015 to 2019</span><br>An average job</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2010</span><br>Leeds College</li>
+                        <li><span>2004 to 2007</span><br>Hull Uni</li>
+                        <li><span>2002 to 2004</span><br>College</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
 
    </div>
+
+   <script>
+
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+   </script>
 </body>
 </html>

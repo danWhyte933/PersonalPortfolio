@@ -478,4 +478,8 @@ nav ul li a:hover::after {
          }
  }
 
- 
+ #msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+ }
